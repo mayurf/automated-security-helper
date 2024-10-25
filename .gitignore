@@ -261,3 +261,5 @@ $RECYCLE.BIN/
 
 # Temp certificate directory
 certs
+
+.idea

@@ -210,6 +210,11 @@ ENV _ASH_EXEC_MODE="local"
 #
 ENV PATH="$PATH:/ash"
 
+#
+# Set environment for python requests to use custom ca bundle
+#
+ENV REQUESTS_CA_BUNDLE /usr/local/share/ca-certificates/${CERT_FILE}
+
 # nosemgrep
 HEALTHCHECK --interval=12s --timeout=12s --start-period=30s \
     CMD type ash || exit 1

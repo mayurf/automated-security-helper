@@ -155,7 +155,7 @@ else
         OUTPUT_DIR_OPTION="--output-dir /out"
       fi
       echo "Running ASH scan using built image..."
-      eval ${RESOLVED_OCI_RUNNER} run \
+      eval "\"${RESOLVED_OCI_RUNNER}\"" run \
           --rm \
           -e ACTUAL_SOURCE_DIR="${SOURCE_DIR}" \
           -e ASH_DEBUG=${DEBUG} \
